@@ -1,5 +1,5 @@
 language: java
-sudo: false # false for faster builds
+sudo: false # false for faster builds.
 script: 
   - "mvn -f ibrahimproje/pom.xml -Dmaven.javadoc.skip=false clean install cobertura:cobertura checkstyle:checkstyle pmd:pmd javadoc:javadoc javadoc:aggregate site"
 jdk:
